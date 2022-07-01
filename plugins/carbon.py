@@ -8,7 +8,7 @@ aiohttpsession = ClientSession()
 C = "**Made by @*bibin_indian_rock*"
 F = InlineKeyboardMarkup(
 [[
-     InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝚄𝚂", url="https://t.me/printvh")
+     InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝚄𝚂", url="https://t.me/tedzomovie01")
 ]]
 )
 
