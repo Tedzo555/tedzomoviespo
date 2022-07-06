@@ -2,6 +2,9 @@ import io
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait
+from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
+from pyrogram.errors.exceptions.bad_request_400 import ChatAdminRequired, UserAdminInvalid
+
 from database.filters_mdb import(
    add_filter,
    get_filters,
