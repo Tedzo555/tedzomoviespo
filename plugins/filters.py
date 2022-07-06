@@ -1,5 +1,5 @@
 import io
-from pyrogram import filters, Client
+from pyrogram import filters,idle, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
