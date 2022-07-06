@@ -234,7 +234,6 @@ async def deletefilter(client, message):
 @Client.on_message(filters.command("logosq") & filters.incoming & filters.text & ~filters.forwarded & filters.private)
 async def logosq(bot, message):
    
-    try:
       text = message.text.replace("logosq","").replace("/","").replace("[ᗷETᗩ]","").strip().upper()
       
       if text == "":
@@ -267,8 +266,6 @@ async def logosq(bot, message):
 
 @Client.on_message(filters.command("logo") & filters.incoming & filters.text & ~filters.forwarded & filters.private)
 async def logo(bot, message):
-     return
-  try:
     text = message.text.replace("logo","").replace("/","").replace("@TechZLogoMakerBot","").strip().upper()
     
     if text == "":
