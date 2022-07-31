@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url='https://t.me/tzobotz')
+                InlineKeyboardButton('  ▼  Uᴘᴅᴀᴛs  ▼  ', url='https://t.me/tzobotz')
             ],
             [
-                InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton(' ▼   Hᴇʟᴘ   ▼ ', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,11 +44,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ɢʀᴏᴜᴩ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/tedzomovie01'), 
-            InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/tzobotz')
+            InlineKeyboardButton(' ▼ ɢʀᴏᴜᴩ ▼ ', url='https://t.me/tedzomovie01'), 
+            InlineKeyboardButton('▼ ᴜᴩᴅᴀᴛᴇꜱ ▼', url='https://t.me/tzobotz')
             ],[      
-            InlineKeyboardButton('➪ ʜᴇʟᴩ', callback_data='help'),
-            InlineKeyboardButton('➪ ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton(' ▼ ʜᴇʟᴩ ▼ ', callback_data='help'),
+            InlineKeyboardButton(' ▼ ᴀʙᴏᴜᴛ ▼ ', callback_data='about')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
@@ -89,8 +89,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ɢʀᴏᴜᴩ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴩ', url='https://t.me/tedzomovie 01'), 
-            InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/tzobotz')
+            InlineKeyboardButton(' ▼ ɢʀᴏᴜᴩ ▼ ', url='https://t.me/tedzomovie 01'), 
+            InlineKeyboardButton(' ▼ ᴜᴩᴅᴀᴛᴇ ▼ ', url='https://t.me/tzobotz')
             ],[      
             InlineKeyboardButton('ʜᴇʟᴩ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -345,7 +345,7 @@ async def delete_all_index(bot, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="⚡ 𝐘𝐞𝐬 ⚡", callback_data="autofilter_delete"
+                        text="⚡ 𝐘𝐞𝐬  ⚡", callback_data="autofilter_delete"
                     )
                 ],
                 [
@@ -408,17 +408,17 @@ async def settings(client, message):
         buttons = [
             [
                 InlineKeyboardButton(
-                    '𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐔𝐓𝐓𝐎𝐍',
+                    '𝗙𝗜𝗟𝗧𝗘𝗥 𝗕𝗨𝗧𝗧𝗢𝗡',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '𝐒𝐈𝐍𝐆𝐋𝐄' if settings["button"] else '𝐃𝐎𝐔𝐁𝐋𝐄',
+                    '𝗦𝗜𝗡𝗚𝗟𝗘' if settings["button"] else '𝗗𝗢𝗨𝗕𝗟𝗘',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    '𝐁𝐎𝐓 𝐏𝐌',
+                    '𝗕𝗢𝗧 𝗣𝗠',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -428,7 +428,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    '𝐅𝐈𝐋𝐄 𝐒𝐄𝐂𝐔𝐑𝐄',
+                    '𝗙𝗜𝗟𝗘  𝗦𝗘𝗖𝗨𝗥𝗘',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -448,7 +448,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    '𝐒𝐏𝐄𝐋𝐋 𝐂𝐇𝐄𝐂𝐊',
+                    '𝗦𝗣𝗘𝗟𝗟  𝗖𝗛𝗘𝗖𝗞',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -458,7 +458,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    '𝐖𝐄𝐋𝐂𝐎𝐌𝐄',
+                    '𝗪𝗘𝗟𝗖𝗢𝗠𝗘',
                     callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
