@@ -2,6 +2,8 @@
 import aiohttp
 from pyrogram import filters
 from pyrogram import Client
+from info import COMMAND_HAND_LER
+from plugins.helper_functions.cust_p_filters import f_onw_fliter
 
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
@@ -12,8 +14,10 @@ I will give information about github profile
  ❍ /github <username>*:* Get information about a GitHub user.
 """
 
-
-@Client.on_message(filters.command("github"))
+@Client.on_message(
+    filters.command(["gh", "github"], COMMAND_HAND_LER) &
+    f_onw_fliter
+)
 async def github(_, message):
     if len(message.command) != 2:
         await message.reply_text("/git username")
