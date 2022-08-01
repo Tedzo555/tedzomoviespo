@@ -781,6 +781,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton("✗ ᴇxɪᴛ ✗", callback_data="close_data")
                ]]
         )
+     )
     elif query.data == "photo":
         buttons = [[
             InlineKeyboardButton(text="𝖡𝗋𝗂𝗀𝗍𝗁", callback_data="bright"),
@@ -811,7 +812,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         photo=random.choice(PICS),
             caption="Hᴇʀᴇ Is Yᴏᴜ'ʀᴇ Mᴇɴᴜ",
             reply_markup=InlineKeyboardMarkup(buttons)
-        )
         )
     elif query.data == "help":
         buttons = [[
