@@ -756,20 +756,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ɢʀᴏᴜᴩ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('ᴏɴᴡᴇʀ', url='https://t.me/tedzosir01'), 
-            InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/tzobotz')
-            ],[      
-            InlineKeyboardButton('➪ ʜᴇʟᴩ', callback_data='help'),
-            InlineKeyboardButton('➪ ᴀʙᴏᴜᴛ', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode='html'
+        reply1 = await msg.message.reply_text("●○○○")
+        await asyncio.sleep(0.5)
+        reply2 = await reply1.edit("●●○○")
+        await asyncio.sleep(0.5)
+        reply3 = await reply2.edit("●●●○")
+        await asyncio.sleep(0.5)
+        reply4 = await reply3.edit("●●●●")
+        await asyncio.sleep(0.5)
+        await reply4.delete() 
+
+
+        await msg.message.edit(
+            text=f"✨ ʜᴇʟʟᴏ {msg.from_user.mention} !\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ **ʜʏᴅʀɪx** ᴛᴏᴏʟs ʙᴏᴛ [🛠️](https://telegra.ph/file/f1ba9b8c2ce7e659e51f6.mp4)\n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
+            reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton("✨ ᴀʙᴏᴜᴛ", callback_data="about")
+               ],[
+               InlineKeyboardButton("➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴄʜᴀᴛ!", url="http://t.me/tedzo_file_s_bot?startgroup=botstart"),
+               InlineKeyboardButton("👥 ɢʀᴏᴜᴘ", url="https://t.me/tedzomovie01")
+               ],[
+               InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help")
+               ],[
+               InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="bots"),
+               InlineKeyboardButton("✗ ᴇxɪᴛ ✗", callback_data="delete")
+               ]]
+            )
         )
     elif query.data == "photo":
         buttons = [[
