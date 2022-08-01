@@ -780,7 +780,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton("🤖 ᴍʏ ʙᴏᴛ's", callback_data="help"),
                InlineKeyboardButton("✗ ᴇxɪᴛ ✗", callback_data="close_data")
                ]]
-            )
         )
     elif query.data == "photo":
         buttons = [[
