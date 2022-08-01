@@ -5,7 +5,7 @@ from pyrogram import Client
 
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
-CREDIT = "tedzo01"
+CREDI_T = "tedzo01"
 
 __help__ = """
 I will give information about github profile 
@@ -49,7 +49,7 @@ async def github(_, message):
     **Location:** `{location}`
    **Followers:** `{followers}`
    **Following:** `{following}`
-     **Created:** `{credit}` """
+     **Created:**   CREDI_T """
             except Exception as e:
                 print(str(e))
                 pass
