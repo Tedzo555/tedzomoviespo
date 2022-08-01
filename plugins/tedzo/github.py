@@ -5,6 +5,7 @@ from pyrogram import Client
 
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
+CREDIT = "tedzo01"
 
 __help__ = """
 I will give information about github profile 
@@ -30,7 +31,6 @@ async def github(_, message):
                 name = result["name"]
                 company = result["company"]
                 bio = result["bio"]
-                credit = result "@tedzo01"
                 created_at = result["created_at"]
                 avatar_url = result["avatar_url"]
                 blog = result["blog"]
