@@ -13,7 +13,7 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-@Client.on_message(filters.command('id'))
+@Client.on_message(filters.command('idinfo'))
 async def showid(client, message):
     chat_type = message.chat.type
     if chat_type == "private":
@@ -73,7 +73,7 @@ async def aboutme(client, message):
             parse_mode='html'
         )
 
-@Client.on_message(filters.command(["info"]))
+@Client.on_message(filters.command(["inf"]))
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
