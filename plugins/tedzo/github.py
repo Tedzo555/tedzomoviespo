@@ -30,7 +30,7 @@ async def github(_, message):
                 name = result["name"]
                 company = result["company"]
                 bio = result["bio"]
-                credit = result " @tedzo01 "
+                credit = result "@tedzo01"
                 created_at = result["created_at"]
                 avatar_url = result["avatar_url"]
                 blog = result["blog"]
