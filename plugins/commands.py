@@ -44,12 +44,12 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ yᴏᴜʀ ɢʀᴏᴜᴩ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton(' ▼ ɢʀᴏᴜᴩ ▼ ', url='https://t.me/tedzomovie01'), 
-            InlineKeyboardButton('▼ ᴜᴩᴅᴀᴛᴇꜱ ▼', url='https://t.me/tzobotz'),
-            InlineKeyboardButton('▼ Oᴡɴᴇʀ ▼', url='https://t.me/tedzo01')
+            InlineKeyboardButton('「𝐆𝐑𝐎𝐔𝐏」', url='https://t.me/tedzomovie01'), 
+            InlineKeyboardButton('「𝐔𝐏𝐃𝐀𝐓𝐒」', url='https://t.me/tzobotz')
+            ],[
+            InlineKeyboardButton('-------「 𝗧𝗘𝗗𝗭𝗢 𝗦𝗜𝗥 」-------)', url='https://t.me/tedzo01')
             ],[      
-            InlineKeyboardButton(' ▼ ʜᴇʟᴩ ▼ ', callback_data='help'),
-            InlineKeyboardButton(' ▼ ᴀʙᴏᴜᴛ ▼ ', callback_data='about')
+            InlineKeyboardButton('「𝐇𝐄𝐋𝐏」', callback_data='help')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("Typing")
