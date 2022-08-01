@@ -1,7 +1,6 @@
 import os
-from datetime import datetime
-from pyrogram import Client as IDBot
-from pyrogram import filters
+from datetime import datetime 
+from pyrogram import filters, Client
 from pyrogram.types import User, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.raw import functions
 from pyrogram.errors import PeerIdInvalid
@@ -39,7 +38,7 @@ BACK_BUTTON = InlineKeyboardMarkup(
     ]
 )
 
-@IDBot.on_message(filters.private & filters.command("id"))
+@Client.on_message(filters.private & filters.command("fid"))
 async def id_handler(bot, update):
     message=update
     if message.reply_to_message:
@@ -65,14 +64,14 @@ async def id_handler(bot, update):
             disable_web_page_preview=True,
             reply_markup=BUTTON_1
         )
-@IDBot.on_message(filters.group & filters.command("id"))
+@Client.on_message(filters.group & filters.command("id"))
 async def id_handler(bot, update):
     await update.reply_text(        
         text=f"**🆔 𝚈𝚘𝚞𝚛 𝙸𝙳 :-** `{update.from_user.id}`\n\n**💬 𝚃𝚑𝚒𝚜 𝙲𝚑𝚊𝚝 𝙸𝙳 :-** `{update.chat.id}`",
         disable_web_page_preview=True,
         reply_markup=BUTTON_1
     )
-@IDBot.on_message(filters.private & filters.command("info"))
+@Client.on_message(filters.private & filters.command("info"))
 async def id_handler(bot, update):
     temp = await update.reply(text="`please wait...`", quote=True)
     pfp = await bot.get_profile_photos(update.from_user.id)
@@ -98,7 +97,7 @@ async def id_handler(bot, update):
             reply_markup=BUTTON_1
         )
         os.remove(dls)
-@IDBot.on_message(filters.private & filters.forwarded)
+@Client.on_message(filters.private & filters.forwarded)
 async def info(motech, msg):
     tmp = await msg.reply(text="`please wait...`", quote=True)
     if msg.forward_from:
