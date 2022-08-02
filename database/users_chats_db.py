@@ -144,4 +144,4 @@ class Database:
         return (await self.db.command("dbstats"))['dataSize']
 
 
-db = Database(mongodb+srv://thetedzo:thetedzo@cluster0.hbw7w.mongodb.net/?retryWrites=true&w=majority, DATABASE_NAME)
+db = Database("mongodb+srv://thetedzo:thetedzo@cluster0.hbw7w.mongodb.net/?retryWrites=true&w=majority", DATABASE_NAME)
