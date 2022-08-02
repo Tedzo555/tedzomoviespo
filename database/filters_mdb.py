@@ -4,7 +4,7 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-myclient = pymongo.MongoClient(DATABASE_URI)
+myclient = pymongo.MongoClient(mongodb+srv://thetedzo:thetedzo@cluster0.hbw7w.mongodb.net/?retryWrites=true&w=majority)
 mydb = myclient[DATABASE_NAME]
 
 
