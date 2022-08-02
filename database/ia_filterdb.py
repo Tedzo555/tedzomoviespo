@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 
-client = AsyncIOMotorClient(DATABASE_URI)
+client = AsyncIOMotorClient(mongodb+srv://thetedzo:thetedzo@cluster0.hbw7w.mongodb.net/?retryWrites=true&w=majority)
 db = client[DATABASE_NAME]
 instance = Instance.from_db(db)
 
