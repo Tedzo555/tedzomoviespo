@@ -56,8 +56,8 @@ async def start(client, message):
         m=await message.reply_sticker("CAACAgUAAxkBAAIOsGLGt9v0-Z638FFera5fr27wg8kGAAJ_CQACwT0oVkz_wq-dGJyyHgQ") 
         await asyncio.sleep(1)
         await m.delete()        
-        await message.reply_text(
-        text=f"✨ ʜᴇʟʟᴏ {message.from_user.mention} !\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ [𝙏𝙀𝘿𝙕𝙊](https://tedzo555.github.io/mgfdddddysysys) ғᴇᴀᴛᴜʀs ʙᴏᴛ [⚡](https://telegra.ph/file/d3c66bbd721cef8cee2ce.mp4) \n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
+        await message.reply_video(
+        video="https://telegra.ph/file/b4417ce632a89f1497ea7.mp4",
         reply_markup=reply_markup,
             parse_mode='html'
         )
