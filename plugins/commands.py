@@ -57,7 +57,7 @@ async def start(client, message):
         await asyncio.sleep(1)
         await m.delete()        
         await message.reply_text(
-        text=f"✨ ʜᴇʟʟᴏ {message.from_user.mention} !\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ [](https://tedzo555.github.io/mgfdddddysysys) ғᴇᴀᴛᴜʀs ʙᴏᴛ [⚡](https://telegra.ph/file/d3c66bbd721cef8cee2ce.mp4) \n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
+        text=f"✨ ʜᴇʟʟᴏ {message.from_user.mention} !\n\n💭 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ [𝙏𝙀𝘿𝙕𝙊](https://tedzo555.github.io/mgfdddddysysys) ғᴇᴀᴛᴜʀs ʙᴏᴛ [⚡](https://telegra.ph/file/d3c66bbd721cef8cee2ce.mp4) \n ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ʜᴇʟᴘғᴜʟʟ ғᴇᴀᴛᴜʀᴇs ɪɴ ᴍʏ ᴘᴍ\n\n💡 ʜɪᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛᴏ ᴍʏ ғᴜʟʟ ᴍᴏᴅᴜʟᴇs\nʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ » 📚\nCᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ!\n\nᴛʜɪs ʙᴏᴛ ᴍᴀɪɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴍʏ **ᴏᴡɴᴇʀ**❗",
         reply_markup=reply_markup,
             parse_mode='html'
         )
